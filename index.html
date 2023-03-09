@@ -16,11 +16,11 @@
             <input type="text" name="num1" placeholder="Num 1" id="n1">
             <input type="text" name="num2" placeholder="Num 2" id="n2">
             <p>Choose an operator:</p>
-            <button class="btn btn-info" onclick="sum();">+</button>
-            <button class="btn btn-info" onclick="difference();">-</button>
-            <button class="btn btn-info" onclick="product();">*</button>
-            <button class="btn btn-info" onclick="quotient();">/</button>
-            <button class="btn btn-info" onclick="remainder();">%</button>
+            <button class="btn btn-info" onclick="sum(parseFloat(document.getElementById('n1').value), parseFloat(document.getElementById('n2').value))">+</button>
+            <button class="btn btn-info" onclick="difference(parseFloat(document.getElementById('n1').value), parseFloat(document.getElementById('n2').value));">-</button>
+            <button class="btn btn-info" onclick="product(parseFloat(document.getElementById('n1').value), parseFloat(document.getElementById('n2').value));">*</button>
+            <button class="btn btn-info" onclick="quotient(parseFloat(document.getElementById('n1').value), parseFloat(document.getElementById('n2').value));">/</button>
+            <button class="btn btn-info" onclick="remainder(parseFloat(document.getElementById('n1').value), parseFloat(document.getElementById('n2').value));">%</button>
         </div>
         <div class="card-footer text-center bg-info" id="footer">Results will be displayed here.</div>
     </div>
